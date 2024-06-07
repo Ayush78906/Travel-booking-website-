@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Services</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .travel-service-body {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .service-options {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin: 10px 0;
+        }
+
+        select,
+        input,
+        button {
+            margin-bottom: 15px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="travel-service-body">
+
+    <header>
+        <h1>Welcome to Our Travel Services</h1>
+    </header>
+
+    <section class="service-options">
+        <h2>Select Your Service</h2>
+        <form action="travel.jsp" method="post" id="service-form" onsubmit="return validateForm()">
+
+            <label for="service-type">Choose Service:</label>
+            <select name="service-type" id="service-type" required>
+                <option value="bus">Bus</option>
+                <option value="flight">Flight</option>
+            </select>
+
+            <label for="departure-location">Departure Location:</label>
+            <input type="text" name="departure-location" id="departure-location" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" name="destination" id="destination" required>
+
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" name="departure-date" id="departure-date" required>
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" name="return-date" id="return-date" required>
+
+            <label for="passenger-count">Number of Passengers:</label>
+            <input type="number" name="passenger-count" id="passenger-count" min="1" required>
+            <a href="/payment.html">
+            <button type="submit">Book Now</button>
+</a>            
+        </form
+
+                  
+                    </section>
+
+    <footer>
+        <p>Contact us at: <a href="mailto:info@travelcompany.com">info@travelcompany.com</a></p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            const serviceType = document.getElementById("service-type").value;
+            const departureLocation = document.getElementById("departure-location").value;
+            const destination = document.getElementById("destination").value;
+            const departureDate = document.getElementById("departure-date").value;
+            const returnDate = document.getElementById("return-date").value;
+            const passengerCount = document.getElementById("passenger-count").value;
+
+            if (!serviceType || !departureLocation || !destination || !departureDate || !returnDate || !passengerCount) {
+                alert("Please fill in all fields.");
+                return false;
+            }
+
+            // Additional validation logic if needed
+
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <link rel="icon" href="./files/lg4.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body class="register-body">
+
+    <nav>
+        <img src="./files/lg4.png" class="logo" alt="Logo" title="LIGHTHEAD TRAVELS">
+
+        <ul class="navbar">
+            <li>
+               <a href="#home">Home</a>
+                    <a href="./locations.html">Locations</a>
+                    <a href="#package">Packages</a>
+                    <a href="gindex.html">Gallery</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="registration">
+        <div class="register-form">
+            <h1>Register <span>Here</span></h1>
+            <form method="Post" action="register.jsp">
+
+                <input type="text" name="myname1" placeholder="Name" id="name" required>
+                <span id="name-error" class="error"></span>
+                <input type="email" name="myemail" placeholder="Email-Id" id="email" required>
+                <span id="email-error" class="error"></span>
+                <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required>
+                <span id="phonenum-error" class="error"></span>
+                <input type="number" name="myage" placeholder="Age" id="myage" required>
+                <span id="myage-error" class="error"></span>
+                <h4>Gender</h4>
+                <input type="radio" name="mygender" value="male"id="" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="mygender" value="female" id=""> Female
+                <span id="gender-error" class="error"></span>
+                <h4>Departure</h4>
+                <input type="date" name="departuredate" id="" required>
+                <span id="departuredate-error" class="error"></span>
+                <h4>Return</h4>
+                <input type="date" name="returndate" id="" required>
+                <span id="returndate-error" class="error"></span>
+                <h4>Travel Destination</h4>
+                <input type="checkbox" name="td" value="Kashmir" id=""> Kashmir &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="td" value="Istanbul"  id=""> Istanbul &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="td" value="Paris"  id=""> Paris &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="td" value="Bali" id=""> Bali &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="td" value="Dubai" id=""> Dubai &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="td" value="Geneva" id=""> Geneva &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="td" value="Port" id=""> Port Blair &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="td" value="Rome" id=""> Rome &nbsp; &nbsp; &nbsp;
+                <span id="td-error" class="error"></span>
+                <br> <br>
+                <h4>Package</h4>
+                <input type="radio" name="locations" value="bronze" id="loc1" required> Bronze &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="locations" value="silver"id="loc1"> Silver &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="locations" value="gold" id="loc1"> Gold &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="locations" value="platinum" id="loc1"> Platinum &nbsp; &nbsp; &nbsp;
+                <span id="locations-error" class="error"></span>
+                <br> <br>
+                <input type="checkbox" name="t&c" id="" checked required> I accept the Terms & Conditions.
+                <span id="tnc-error" class="error"></span>
+
+             <br> <br>
+                 <input type="submit" name="submit"/>
+                 <!--<a href="./travel.html" class="button" id="button1">Submit!!</a>-->
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./register.html">Register</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank"><i
+                                class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/i.ayush88?igsh=ODA1NTc5OTg5Nw== " target="_blank"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i
+                                class='bx bxl-twitter'></i></a>
+                        <a href="https://www.linkedin.com/in/ayush-pal-512890282/" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.youtube.com/channel/UCwjZmeqBjLsbJ633uWhIvFA" target="_blank"><i class='bx bxl-youtube'></i></a>
+                        
+                        <a href="https://github.com/Ayush78906" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Copyright © 2023<br>Website developed by: Ayush Pal</p>
+        </div>
+    </section>
+
+    <!-- Javascript -->
+    <script>
+        function validateform() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phonenum").value;
+            const age = document.getElementById("myage").value;
+            const gender = document.querySelector('input[name="mygender"]:checked');
+            const departureDate = document.getElementById("departuredate").value;
+            const returnDate = document.getElementById("returndate").value;
+            const travelDestinations = document.querySelectorAll('input[name="td"]:checked');
+            const package = document.querySelector('input[name="locations"]:checked');
+            const termsCheckbox = document.querySelector('input[name="t&c"]');
+
+            // Clear previous error messages
+            clearErrors();
+
+            // Name validation
+            const nameRegex = /^[A-Za-z\s]+$/;
+            if (!nameRegex.test(name)) {
+                displayError("name-error", "Please enter a valid name containing only alphabetic characters.");
+                return false;
+            }
+
+            // Email validation
+            const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+            if (!emailRegex.test(email)) {
+                displayError("email-error", "Please enter a valid email address.");
+                return false;
+            }
+
+            // Phone number validation
+            if (phone.length < 10 || isNaN(phone)) {
+                displayError("phonenum-error", "Please enter a valid phone number with at least 10 digits and no characters.");
+                return false;
+            }
+
+            // Age validation
+            if (age < 18 || age > 100) {
+                displayError("myage-error", "Please enter a valid age between 18 and 100.");
+                return false;
+            }
+
+            // Gender validation
+            if (!gender) {
+                displayError("gender-error", "Please select a gender.");
+                return false;
+            }
+
+            const currentDate = new Date();
+            if (departureDate < currentDate) {
+                displayError("departuredate-error", "Departure date cannot be in the past.");
+                return false;
+            }
+
+            // Return Date validation
+            if (returnDate <= departureDate) {
+                displayError("returndate-error", "Return date must be greater than the departure date.");
+                return false;
+            }
+
+            // Travel Destinations validation
+            if (travelDestinations.length === 0) {
+                displayError("td-error", "Please select at least one travel destination.");
+                return false;
+            }
+
+            // Package validation
+            if (!package) {
+                displayError("locations-error", "Please select a travel package.");
+                return false;
+            }
+
+            // Terms & Conditions checkbox validation
+            if (!termsCheckbox.checked) {
+                displayError("tnc-error", "Please accept the Terms & Conditions.");
+                return false;
+            }
+
+            return true;
+         
+        }
+
+        function displayError(id, message) {
+            const errorElement = document.getElementById(id);
+            errorElement.textContent = message;
+        }
+
+        function clearErrors() {
+            const errorElements = document.querySelectorAll(".error");
+            errorElements.forEach((element) => {
+                element.textContent = "";
+            });
+        }
+    </script>
+
+</body>
+
+</html>
